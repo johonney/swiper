@@ -1,5 +1,5 @@
 # swiper
-swiper的使用方式：
+#swiper的使用方式：
 1.首先加载插件，需要用到的文件有swiper.min.js和swiper.min.css文件。
 <!DOCTYPE html>
 <html>
