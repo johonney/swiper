@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>swiper动画</title>
+	<link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<script src='js/swiper-3.3.1.jquery.min.js'></script>
+	<script src='js/swiper.animate1.0.2.min.js'></script>
+	<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.slide1{
+		background: url(images/jay1.jpg) no-repeat;
+		background-size: cover;
+
+	}
+	.slide2{
+		background: url(images/jay.jpeg) no-repeat;
+		background-size: cover;
+	}
+	.slide3{
+		background: url(images/jay.jpg) no-repeat;
+		background-size: cover;
+	}
+	.slide1,.slide2,.slide3{
+		width: 100%;
+		height: 800px;
+		float: left;
+	}
+	</style>
+	<script>
+		var mySwiper = new Swiper('.swiper-container',{
+			onInit:function(swiper){
+				swiperAnimateCache(swiper);
+				swiperAnimate(swiper);
+			},
+			onSlideChangEnd:function(swiper){
+				swiperAnimate(swiper);
+			}
+		})
+	</script>
+</head>
+<body>
+	<div class="swiper-slide slide1">
+		<p class="ani" swiper-animate-effect='fadeInUp' swiper-animate-duration='0.5s' swiper-animate-delay='0.3s'>哎呦不错哦！</p>
+		<p class="ani" swiper-animate-effect='fadeInUp' swiper-animate-duration='0.5s' swiper-animate-delay='0.3s'>haha！</p>
+	</div>
+</body>
+</html>
