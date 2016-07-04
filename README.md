@@ -68,3 +68,4 @@
 
 *建议不使用Source Map功能，请把js压缩文件最后一行//# sourceMappingURL=maps/swiper.min.js.map 删掉。以免在某些浏览器出现以下提示：
 
+同样的swiper的动画也是如此。请细看animation文件
